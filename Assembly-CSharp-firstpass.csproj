@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{CF9F3DB4-A5AE-3BBA-F631-A5E5293EA5CC}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_4_5_5;UNITY_4_5;UNITY_ANDROID;ENABLE_MICROPHONE;ENABLE_TEXTUREID_MAP;ENABLE_UNITYEVENTS;ENABLE_NEW_HIERARCHY ;ENABLE_AUDIO_FMOD;ENABLE_MONO;ENABLE_TERRAIN;ENABLE_SUBSTANCE;ENABLE_GENERICS;INCLUDE_WP8SUPPORT;ENABLE_WWW;ENABLE_IMAGEEFFECTS;INCLUDE_WP_BLUE_SUPPORT;ENABLE_WEBCAM;INCLUDE_METROSUPPORT;RENDER_SOFTWARE_CURSOR;ENABLE_NETWORK;ENABLE_PHYSICS;ENABLE_CACHING;ENABLE_CLOTH;UNITY_ANDROID_API;ENABLE_2D_PHYSICS;ENABLE_SHADOWS;ENABLE_AUDIO;ENABLE_NAVMESH_CARVING;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_PROFILER;UNITY_EDITOR;UNITY_EDITOR_OSX;rock_ball</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\Plugins\Soomla\Core\AndroidImpl\KeyValueStorageAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\AndroidImpl\RewardStorageAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\CoreSettings.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\ISoomlaSettings.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\ObjectDictionary.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\SoomlaEditorScript.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\UnityDictionary.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\android\ISoomlaManifestTools.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\android\SoomlaAndroidUtil.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Config\android\SoomlaManifestTools.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\CoreEvents.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\IOSImpl\KeyValueStorageIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\IOSImpl\RewardStorageIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\JSONObject.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\NullCheckable.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\Schedule.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\SoomlaEntity.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\SoomlaUtils.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\data\JSONConsts.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\data\KeyValueStorage.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\data\RewardStorage.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\rewards\BadgeReward.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\rewards\RandomReward.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\rewards\Reward.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Core\rewards\SequenceReward.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\AndroidImpl\AndroidJNIHandler.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\AndroidImpl\SoomlaStoreAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\AndroidImpl\StoreInfoAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\AndroidImpl\StoreInventoryAndroid.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\Config\StoreManifestTools.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\Config\StoreSettings.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\IOSImpl\IOS_ErrorCodes.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\IOSImpl\SoomlaStoreIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\IOSImpl\StoreInfoIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\IOSImpl\StoreInventoryIOS.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\IStoreAssets.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\SoomlaStore.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\StoreEvents.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\StoreInventory.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\data\JSONConsts.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\data\StoreInfo.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\MarketItem.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\PurchasableVirtualItem.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\VirtualCategory.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\VirtualItem.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\virtualCurrencies\VirtualCurrency.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\virtualCurrencies\VirtualCurrencyPack.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\EquippableVG.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\LifetimeVG.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\SingleUsePackVG.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\SingleUseVG.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\UpgradeVG.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\domain\virtualGoods\VirtualGood.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\exceptions\InsufficientFundsException.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\exceptions\NotEnoughGoodsException.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\exceptions\VirtualItemNotFoundException.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\purchaseTypes\PurchaseType.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\purchaseTypes\PurchaseWithMarket.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\purchaseTypes\PurchaseWithVirtualItem.cs" />
+     <Compile Include="Assets\Plugins\Soomla\Store\rewards\VirtualItemReward.cs" />
+     <None Include="Assets\Plugins\Android\res\values-ar\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-en-rGB\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ru\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\color\wallet_secondary_text_holo_dark.xml" />
+     <None Include="Assets\Plugins\Android\res\values-my-rMM\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\wallet_attrs.xml" />
+     <None Include="Assets\Plugins\Android\res\values-uk\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-mr-rIN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sr\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-eu-rES\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ur-rPK\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\wallet_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-mn-rMN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-mk-rMK\common_strings.xml" />
+     <None Include="Assets\Editor\projsettings.txt" />
+     <None Include="Assets\Plugins\Android\res\values-bn-rBD\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\admob_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-vi\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-kn-rIN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-tr\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-et-rEE\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-am\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-es\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-iw\common_strings.xml" />
+     <None Include="Assets\Editor\template-AndroidManifest.txt" />
+     <None Include="Assets\Plugins\Android\res\drawable\common_signin_btn_icon_dark.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt-rPT\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-bg\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ca\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\BaseGameUtils\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\res\values-nb\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ta-rIN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-te-rIN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-kk-rKZ\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rTW\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-cs\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\admob_ads_attrs.xml" />
+     <None Include="Assets\Plugins\Android\res\values\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fr\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ka-rGE\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ms-rMY\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sw\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-af\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-tl\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-is-rIS\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\color\common_signin_btn_text_light.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hr\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\color\wallet_primary_text_holo_light.xml" />
+     <None Include="Assets\Editor\template-GPGSParams.txt" />
+     <None Include="Assets\Plugins\Android\res\values-zu\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ja\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\wallet_styles.xml" />
+     <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\res\values-da\common_strings.xml" />
+     <None Include="Assets\Sprite Pack #1 - Tap and Fly\!Readme.txt" />
+     <None Include="Assets\Plugins\Android\res\values-en-rIN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lo-rLA\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ne-rNP\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\admob_iap_style.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fa\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rCN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\Plugins\Android\res\values\version.xml" />
+     <None Include="Assets\Plugins\Android\res\values-be\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-es-rUS\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fr-rCA\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sk\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\color\common_signin_btn_text_dark.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ky-rKG\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\BaseGameUtils\res\values\gamehelper_strings.xml" />
+     <None Include="Assets\Plugins\Android\MainLibProj\AndroidManifest.xml" />
+     <None Include="Assets\Plugins\Android\res\values-gl-rES\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\common_signin_btn_icon_light.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hy-rAM\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-uz-rUZ\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\drawable\common_signin_btn_text_light.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sl\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-fi\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-in\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\common_colors.xml" />
+     <None Include="Assets\Plugins\Android\res\values-nl\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lt\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pl\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-sv\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ml-rIN\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ro\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\wallet_colors.xml" />
+     <None Include="Assets\Plugins\Android\res\values-th\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-km-rKH\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values\maps_attrs.xml" />
+     <None Include="Assets\Plugins\Android\res\values-ko\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-es\wallet_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-si-rLK\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-lv\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hi\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-it\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-de\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-hu\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-pt-rBR\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-zh-rHK\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\res\values-el\common_strings.xml" />
+     <None Include="Assets\Plugins\Android\proguard.txt" />
+ <Reference Include="GPGSUtils">
+ <HintPath>/Users/arjun/Digger/Assets/Plugins/GPGSUtils.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>

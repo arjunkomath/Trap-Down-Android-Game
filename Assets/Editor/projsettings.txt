@@ -1,0 +1,6 @@
+lastUpgrade=00900
+proj.AppId=984766867491
+android.SetupDone=true
+ios.ClientId=984766867491-l7atpaduvkhehv88e1dq1o5mcfu9dtv1.apps.googleusercontent.com
+ios.BundleId=com.techulus.trapdown
+ios.SetupDone=true
